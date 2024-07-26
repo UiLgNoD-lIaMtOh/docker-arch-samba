@@ -1,4 +1,4 @@
-FROM --platform=linux/arm64/v8  alpine:latest
+FROM alpine:latest
 
 ADD package /sharedir
 
