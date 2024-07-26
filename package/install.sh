@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # 将执行脚本移动到可执行目录并授权
 mv -fv run_samba /usr/bin/
 chmod -v u+x /usr/bin/run_samba
