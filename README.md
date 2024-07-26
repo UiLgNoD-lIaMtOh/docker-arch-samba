@@ -11,7 +11,7 @@
   </picture>
 </a>
 
-## ghrc.io  
+## ghcr.io  
 镜像仓库链接：[https://github.com/UiLgNoD-lIaMtOh/docker-arch-samba/pkgs/container/alpine-samba](https://github.com/UiLgNoD-lIaMtOh/docker-arch-samba/pkgs/container/alpine-samba)  
 
 ## 描述
@@ -62,9 +62,9 @@
     cd docker-arch-samba
     # 无缓存构建  
     ## arm64v8  
-    docker build --no-cache --platform "linux/arm64/v8" -f Dockerfile -t ghrc.io/uilgnod-liamtoh/alpine-samba:latest . ; docker builder prune -fa ; docker rmi $(docker images -qaf dangling=true)   
+    docker build --no-cache --platform "linux/arm64/v8" -f Dockerfile -t ghcr.io/uilgnod-liamtoh/alpine-samba:latest . ; docker builder prune -fa ; docker rmi $(docker images -qaf dangling=true)   
     ## amd64  
-    docker build --no-cache --platform "linux/amd64" -f Dockerfile -t ghrc.io/uilgnod-liamtoh/alpine-samba:latest . ; docker builder prune -fa ; docker rmi $(docker images -qaf dangling=true)  
+    docker build --no-cache --platform "linux/amd64" -f Dockerfile -t ghcr.io/uilgnod-liamtoh/alpine-samba:latest . ; docker builder prune -fa ; docker rmi $(docker images -qaf dangling=true)  
     # 或者这么构建也可以二选一
     ## arm64
     docker-compose -f docker-compose-arm64.yml build --no-cache ; docker builder prune -fa ; docker rmi $(docker images -qaf dangling=true)
