@@ -85,7 +85,20 @@
     docker-compose -f docker-compose-arm64.yml logs -f
     ## amd64
     docker-compose -f docker-compose-amd64.yml logs -f
-
+    
+## 系统访问
+  ### MacOS 访问samba以及支持的协议请参考
+  [https://support.apple.com/zh-cn/guide/mac-help/mchlp1140/mac](https://support.apple.com/zh-cn/guide/mac-help/mchlp1140/14.0/mac/14.0)  
+  [https://support.apple.com/zh-cn/guide/mac-help/mchlp3015/14.0/mac/14.0](https://support.apple.com/zh-cn/guide/mac-help/mchlp3015/14.0/mac/14.0)
+    
+  ### windows 打开资源管理器访问，输入密码和用户名即可（默认用户名 root 默认密码 123456） 
+    \\IP\sharedir
+    
+  ### Linux 界面打开资源管理器访问，输入密码和用户名即可（默认用户名 root 默认密码 123456） 
+    smb://IP/sharedir
+  ### 非 linux windows macos 系统如何访问 samba ？请参考
+  [https://www.google.it/search?q=非 linux windows macos 系统如何访问 samba ？](https://www.google.it/search?q=非+linux+windows+macos+系统如何访问+samba)
+    
 ## 想要修改密码怎么办？
     # 进入目录
     cd docker-arch-samba
