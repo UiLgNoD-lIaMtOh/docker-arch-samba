@@ -21,7 +21,7 @@ services:
       - "139:139"
       - "445:445"
     privileged: true
-    restart: "no"
+    restart: "always"
     logging:
       driver: json-file
       options:
